@@ -20,13 +20,13 @@
                 <span>
                     <img src="/images/build.svg" alt="Selo Rockeatseat" />
                 </span>
-                <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
+                <img id="userImage" src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
             </div>
-            <h1 id="userName">Israel Batista</h1>
-            <a href="https://github.com/Israelfer" target="_blank">
+            <h1 id="userName">Mayk Brito</h1>
+            <a id="userLink" href="https://github.com" target="_blank">
                 <img src="/images/github.svg" alt="Ícone github" />
-                israelfer</a>
-            <p>An instructor focused on helping pople start programming for web</p>
+                <span id="userLogin">maykbrito</span></a>
+            <p id="userBio">An instructor focused on helping pople start programming for web</p>
             <ul id="socialLinks">
                 <li class="youtube">
                     <a href="https://www.youtube.com" target="_blank">
@@ -47,25 +47,8 @@
             </ul>
         </div>
     </main>
-    
-    <script>
-        const linksSocialMedia = {
-            github: 'israelfer',
-            youtube: 'channel/UCwi-4fig-OyP1IbZkwvl3tA',
-            facebook: 'israel.batista17',
-            instagram: '_Israelbatista',
-            twitter: '_Israelbatista'
-        }
 
-        function changeSocialMediaLinks() {
-            for(let li of socialLinks.children) {
-                const social = li.getAttribute('class')
-                li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
-            }
-        }
-
-        changeSocialMediaLinks()
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
